@@ -1,0 +1,39 @@
+html, body{
+    font-family: 'Karla';
+}
+
+svg{
+    height: 2rem;
+    width: 2rem;
+}
+
+.link:hover path{
+    fill: #000000 !important;
+}
+
+.profile-image{
+    position: relative;
+}
+
+.profile-image::after{
+    position: absolute;
+    z-index: -9999;
+    content: '';
+    height: 100%;
+    width: 100%;
+    right: -20px;
+    bottom:-20px;
+    border: 3px solid #f8b806;
+    border-radius: 6px;
+}
+
+.top-dot::after{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #f8b806;
+    content: '';
+    border-radius: 100%;
+    left: -4.5px;
+    top: 75px;
+}
